@@ -20,7 +20,12 @@
 5. Data can be provided using JSON files.
 
 #### **STEPS TO EXECUTE TESTS**
-1. Execute via Command Line / Maven
+1. Run batch file (On Windows)
+    1. In the project root directory run the "**run.bat**" file.
+    2. It will trigger the execution.
+    3. The default browser is set to **Chrome**.
+    4. If you wish to change the browser then edit the **run.bat** file and set the value for -Dbrowser={chrome or firefox}
+2. Execute via Command Line / Maven
     1. Launch command prompt.
     2. Go to the root folder of the project.
     3. Type the below command<br>
@@ -30,7 +35,7 @@
         * command to run in default browser is <br>
             * <b>mvn clean test </b>
             
-2. Execute using the testng.xml
+3. Execute using the testng.xml
     1. Launch the project in preferred IDE.
     2. In the root folder, you can find the testng.xml.
     3. Default browser is set to Chrome.
