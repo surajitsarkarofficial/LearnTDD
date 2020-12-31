@@ -7,6 +7,10 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
+/**
+ * This class Manages the WebDriver Instance
+ * @author surajit.sarkar
+ */
 public final class DriverManager {
 
     private DriverManager()

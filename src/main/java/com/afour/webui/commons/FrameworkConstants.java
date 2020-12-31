@@ -2,6 +2,10 @@ package com.afour.webui.commons;
 
 import java.io.File;
 
+/**
+ * This class contains all the constants which are common across the framework
+ * @author surajit.sarkar
+ */
 public final class FrameworkConstants {
 
     private FrameworkConstants()

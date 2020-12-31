@@ -11,8 +11,17 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * This class contains utility methods which can be used across the framework
+ * @author surajit.sarkar
+ */
 public class TestUtils {
 
+	/**
+	 * This method will return the current date time in specified format
+	 * @param format
+	 * @return Stirng
+	 */
 	public static String getCurrentDateTime(String format) {
 		DateFormat dateFormat = new SimpleDateFormat(format);
 		Date date = new Date();

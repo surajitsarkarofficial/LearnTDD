@@ -8,6 +8,10 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import java.io.File;
 
+/**
+ * This class manages the Extent Report instance
+ * @author surajit.sarkar
+ */
 public final class ExtentManager {
 
     private ExtentManager()
@@ -32,6 +36,10 @@ public final class ExtentManager {
     {
         return extentReport;
     }
+
+    /**
+     * This method will initialise the extent report
+     */
     public void initExtentReport()
     {
         String dateTime = TestUtils.getCurrentDateTime("dd-MM-yyy-HH-mm-ss");
