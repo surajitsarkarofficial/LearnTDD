@@ -14,6 +14,7 @@ import org.testng.annotations.*;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.util.Objects;
 
 //@Listeners(TestListeners.class)
 public class BaseTest {
@@ -27,7 +28,12 @@ public class BaseTest {
 
     @Parameters("browser")
     @BeforeTest(alwaysRun = true)
-    public void beforeTestSetup(@Optional("Chrome") String browser) throws Exception {
+    public void beforeTestSetup(@Optional("Chrome") String brwsr) throws Exception {
+        String browser = System.getProperty("browser");
+        if(Objects.isNull(browser)|| browser.isEmpty() || browser.equals(""))
+        {
+            browser=brwsr;
+        }
         DriverManager.getInstance().initDriver(browser);
 
     }
