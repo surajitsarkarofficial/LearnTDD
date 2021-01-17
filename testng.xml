@@ -7,12 +7,12 @@ Valid browser name = chrome , firefox
 	<parameter name="browser" value="chrome"></parameter>
 	<test name="Google">
 		<classes>
-			<class name="com.afour.webui.tests.applications.google.GoogleSearchTests"></class>
+			<class name="com.learn.webui.tests.applications.google.GoogleSearchTests"></class>
 		</classes>
 	</test>
 	<test name="FlightRadar">
 		<classes>
-			<class name="com.afour.webui.tests.applications.flightradar.FlightRadarTests"></class>
+			<class name="com.learn.webui.tests.applications.flightradar.FlightRadarTests"></class>
 		</classes>
 	</test>
 </suite>
